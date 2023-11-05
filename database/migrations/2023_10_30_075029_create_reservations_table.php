@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users');
             $table->foreignId('room_id')->constrained('rooms');
-            $table->foreignId('booking_source_id')->constrained()->nullable();
+            $table->foreignId('booking_source_id')->constrained('booking_sources')->nullable();
             $table->date('check_in_date');
             $table->date('check_out_date');
             $table->decimal('total_price', 10, 2);

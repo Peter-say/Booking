@@ -12,7 +12,6 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('rooms', function (Blueprint $table) {
-            Schema::create('rooms', function (Blueprint $table) {
                 $table->id();
                 $table->string('room_number');
                 $table->string('room_type');
@@ -31,8 +30,6 @@ return new class extends Migration
                 $table->boolean('ocean_view')->default(false); // Room with an ocean view
                 $table->timestamps();
             });
-            
-        });
     }
 
     /**
