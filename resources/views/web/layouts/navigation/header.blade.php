@@ -3,8 +3,8 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand logos" href="index.html">
-                <img src="web/img/logos/logo.png" alt="logo" class="logo-photo">
-                <img src="web/img/logos/white-logo.png" alt="logo" class="logo-photo2">
+                <img src="{{$web_assets}}/img/logos/logo.png" alt="logo" class="logo-photo">
+                <img src="{{$web_assets}}/img/logos/white-logo.png" alt="logo" class="logo-photo2">
             </a>
             <button class="navbar-toggler" id="drawer" type="button">
                 <span class="fa fa-bars"></span>
@@ -71,7 +71,7 @@
                             <li><a class="dropdown-item" href="typography.html">Typography</a>
                             <li><a class="dropdown-item" href="faq.html">Faq</a>
                             <li><a class="dropdown-item" href="login.html">Login</a>
-                            <li><a class="dropdown-item" href="signup.html">Sigup</a>
+                            <li><a class="dropdown-item" href="{{route('register')}}">Sigup</a>
                             <li><a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
                             <li><a class="dropdown-item" href="404.html">404 Error</a>
                         </ul>
@@ -98,7 +98,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="booking-system.html" class="btn-lg btn-4 btn-6">Booking System</a>
+                        <a href="booking-system.html" class="btn-lg  btn-4 btn-6">Booking System</a>
                     </li>
                 </ul>
             </div>

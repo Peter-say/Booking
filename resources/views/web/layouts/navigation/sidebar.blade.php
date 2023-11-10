@@ -6,7 +6,7 @@
     </div>
     <div class="sidebar-inner">
         <div class="sidebar-logo">
-            <img src="web/img/logos/logo.png" alt="sidebarlogo">
+            <img src="{{$web_assets}}/img/logos/logo.png" alt="sidebarlogo">
         </div>
         <div class="sidebar-navigation">
             <h3 class="heading">Pages</h3>
@@ -67,7 +67,7 @@
                         <li><a href="typography.html">Typography</a></li>
                         <li><a href="faq.html">Faq</a></li>
                         <li><a href="login.html">Login</a></li>
-                        <li><a href="signup.html">Signup</a></li>
+                        <li><a href="{{route('register')}}">Signup</a></li>
                         <li><a href="forgot-password.html">Forgot Password</a></li>
                         <li><a href="404.html">404 Error</a></li>
                     </ul>

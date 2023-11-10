@@ -6,7 +6,7 @@
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item item active">
-                <img class="d-block w-100 h-100" src="web/img/banner/img-3.jpg" alt="banner">
+                <img class="d-block w-100 h-100" src="{{$web_assets}}/img/banner/img-3.jpg" alt="banner">
                 <div class="carousel-caption banner-slider-inner d-flex h-100">
                     <div class="carousel-content container align-self-center">
                         <div class="row bti-section">
@@ -151,8 +151,8 @@
             <div class="col-lg-6 col-md-12 wow fadeInLeft delay-04s">
                 <div class="about-img-section">
                     <div class="image-box">
-                        <div class="image-1"><img src="web/img/about/img-4.jpg" class="rounded" alt="photo"></div>
-                        <div class="image-2"><img src="web/img/about/img-5.jpg" class="rounded" alt="photo"></div>
+                        <div class="image-1"><img src="{{$web_assets}}/img/about/img-4.jpg" class="rounded" alt="photo"></div>
+                        <div class="image-2"><img src="{{$web_assets}}/img/about/img-5.jpg" class="rounded" alt="photo"></div>
                     </div>
                     <div class="about-box-Experience">
                         <h3 class="text-white">38</h3>
@@ -204,7 +204,7 @@
                         <!-- Photo thumbnail -->
                         <div class="photo-thumbnail">
                             <div class="photo">
-                                <img src="web/img/room/img-1.jpg" alt="photo" class="img-fluid w-100">
+                                <img src="{{$web_assets}}/img/room/img-1.jpg" alt="photo" class="img-fluid w-100">
                                 <a href="rooms-details.html">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -265,7 +265,7 @@
                         <!-- Photo thumbnail -->
                         <div class="photo-thumbnail">
                             <div class="photo">
-                                <img src="web/img/room/img-2.jpg" alt="phot" class="img-fluid w-100">
+                                <img src="{{$web_assets}}/img/room/img-2.jpg" alt="phot" class="img-fluid w-100">
                                 <a href="rooms-details.html">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -326,7 +326,7 @@
                         <!-- Photo thumbnail -->
                         <div class="photo-thumbnail">
                             <div class="photo">
-                                <img src="web/img/room/img-4.jpg" alt="photo" class="img-fluid w-100">
+                                <img src="{{$web_assets}}/img/room/img-4.jpg" alt="photo" class="img-fluid w-100">
                                 <a href="rooms-details.html">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -387,7 +387,7 @@
                         <!-- Photo thumbnail -->
                         <div class="photo-thumbnail">
                             <div class="photo">
-                                <img src="web/img/room/img-3.jpg" alt="photo" class="img-fluid w-100">
+                                <img src="{{$web_assets}}/img/room/img-3.jpg" alt="photo" class="img-fluid w-100">
                                 <a href="rooms-details.html">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -448,7 +448,7 @@
                         <!-- Photo thumbnail -->
                         <div class="photo-thumbnail">
                             <div class="photo">
-                                <img src="web/img/room/img-5.jpg" alt="photo" class="img-fluid w-100">
+                                <img src="{{$web_assets}}/img/room/img-5.jpg" alt="photo" class="img-fluid w-100">
                                 <a href="rooms-details.html">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -509,7 +509,7 @@
                         <!-- Photo thumbnail -->
                         <div class="photo-thumbnail">
                             <div class="photo">
-                                <img src="web/img/room/img-6.jpg" alt="photo" class="img-fluid w-100">
+                                <img src="{{$web_assets}}/img/room/img-6.jpg" alt="photo" class="img-fluid w-100">
                                 <a href="rooms-details.html">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -666,7 +666,7 @@
                     <div class="recent-news-item mb-3">
                         <div class="thumb">
                             <a href="events-details.html">
-                                <img src="web/img/events/img-3.jpg" alt="small-img">
+                                <img src="{{$web_assets}}/img/events/img-3.jpg" alt="small-img">
                             </a>
                         </div>
                         <div class="content">
@@ -681,7 +681,7 @@
                     <div class="recent-news-item mb-3">
                         <div class="thumb">
                             <a href="events-details.html">
-                                <img src="web/img/events/img-2.jpg" alt="small-img">
+                                <img src="{{$web_assets}}/img/events/img-2.jpg" alt="small-img">
                             </a>
                         </div>
                         <div class="content">
@@ -696,7 +696,7 @@
                     <div class="recent-news-item mb-3">
                         <div class="thumb">
                             <a href="events-details.html">
-                                <img src="web/img/events/img-5.jpg" alt="small-img">
+                                <img src="{{$web_assets}}/img/events/img-5.jpg" alt="small-img">
                             </a>
                         </div>
                         <div class="content">
@@ -711,7 +711,7 @@
                     <div class="recent-news-item">
                         <div class="thumb">
                             <a href="events-details.html">
-                                <img src="web/img/events/img-8.jpg" alt="small-img">
+                                <img src="{{$web_assets}}/img/events/img-8.jpg" alt="small-img">
                             </a>
                         </div>
                         <div class="content">
@@ -746,7 +746,7 @@
                                             <div class="item-inner">
                                                 <p>Lorem ipsum dolor sit amet, conser adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a conser nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat</p>
                                                 <div class="testimonials-avatar">
-                                                    <img src="web/img/avatar/avatar-1.jpg" alt="avatar">
+                                                    <img src="{{$web_assets}}/img/avatar/avatar-1.jpg" alt="avatar">
                                                 </div>
                                                 <div class="author-name">
                                                     Karen Paran
@@ -757,7 +757,7 @@
                                             <div class="item-inner">
                                                 <p>Lorem ipsum dolor sit amet, conser adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a conser nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat</p>
                                                 <div class="testimonials-avatar">
-                                                    <img src="web/img/avatar/avatar-2.jpg" alt="avatar">
+                                                    <img src="{{$web_assets}}/img/avatar/avatar-2.jpg" alt="avatar">
                                                 </div>
                                                 <div class="author-name">
                                                     David Jackson
@@ -768,7 +768,7 @@
                                             <div class="item-inner">
                                                 <p>Lorem ipsum dolor sit amet, conser adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a conser nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat</p>
                                                 <div class="testimonials-avatar">
-                                                    <img src="web/img/avatar/avatar-3.jpg" alt="avatar">
+                                                    <img src="{{$web_assets}}/img/avatar/avatar-3.jpg" alt="avatar">
                                                 </div>
                                                 <div class="author-name">
                                                     Teseira Rony
@@ -798,7 +798,7 @@
                                         <div class="property-inner">
                                             <div class="photo-overflow">
                                                 <div class="property-photo">
-                                                    <img class="img-fluid w-100" src="web/img/popular-places/img-1.jpg" alt="popular-places">
+                                                    <img class="img-fluid w-100" src="{{$web_assets}}/img/popular-places/img-1.jpg" alt="popular-places">
                                                 </div>
                                             </div>
                                             <div class="ling-section">
@@ -816,7 +816,7 @@
                                         <div class="property-inner">
                                             <div class="photo-overflow">
                                                 <div class="property-photo">
-                                                    <img class="img-fluid w-100" src="web/img/popular-places/img-2.jpg" alt="popular-places">
+                                                    <img class="img-fluid w-100" src="{{$web_assets}}/img/popular-places/img-2.jpg" alt="popular-places">
                                                 </div>
                                             </div>
                                             <div class="ling-section">
@@ -834,7 +834,7 @@
                                         <div class="property-inner">
                                             <div class="photo-overflow">
                                                 <div class="property-photo">
-                                                    <img class="img-fluid w-100" src="web/img/popular-places/img-3.jpg" alt="popular-places">
+                                                    <img class="img-fluid w-100" src="{{$web_assets}}/img/popular-places/img-3.jpg" alt="popular-places">
                                                 </div>
                                             </div>
                                             <div class="ling-section">
@@ -883,7 +883,7 @@
                 <div class="staff-box-4">
                     <div class="item">
                         <div class="thumb">
-                            <img src="web/img/staff/img-5.jpg" alt="staff" class="img-fluid w-100">
+                            <img src="{{$web_assets}}/img/staff/img-5.jpg" alt="staff" class="img-fluid w-100">
                             <div class="info">
                                 <h4>Hartisona Roy</h4>
                                 <span>Hotel Developer</span>
@@ -913,7 +913,7 @@
                 <div class="staff-box-4">
                     <div class="item">
                         <div class="thumb">
-                            <img src="web/img/staff/img-6.jpg" alt="staff" class="img-fluid w-100">
+                            <img src="{{$web_assets}}/img/staff/img-6.jpg" alt="staff" class="img-fluid w-100">
                             <div class="info">
                                 <h4>Karen Paran</h4>
                                 <span>Hotel Director</span>
@@ -943,7 +943,7 @@
                 <div class="staff-box-4">
                     <div class="item">
                         <div class="thumb">
-                            <img src="web/img/staff/img-7.jpg" alt="staff" class="img-fluid w-100">
+                            <img src="{{$web_assets}}/img/staff/img-7.jpg" alt="staff" class="img-fluid w-100">
                             <div class="info">
                                 <h4>Hartisona Roy</h4>
                                 <span>Hotel Developer</span>
@@ -973,7 +973,7 @@
                 <div class="staff-box-4">
                     <div class="item">
                         <div class="thumb">
-                            <img src="web/img/staff/img-8.jpg" alt="staff" class="img-fluid w-100">
+                            <img src="{{$web_assets}}/img/staff/img-8.jpg" alt="staff" class="img-fluid w-100">
                             <div class="info">
                                 <h4>Shakira Kaisar</h4>
                                 <span>Support Manager</span>
@@ -1003,7 +1003,7 @@
                 <div class="staff-box-4">
                     <div class="item">
                         <div class="thumb">
-                            <img src="web/img/staff/img-7.jpg" alt="staff" class="img-fluid w-100">
+                            <img src="{{$web_assets}}/img/staff/img-7.jpg" alt="staff" class="img-fluid w-100">
                             <div class="info">
                                 <h4>Maikel John</h4>
                                 <span>Hotel Manager</span>
@@ -1082,9 +1082,9 @@
             <div class="item slide-box">
                 <div class="blog-1">
                     <div class="blog-image">
-                        <img src="web/img/blog/img-5.jpg" alt="image" class="img-fluid w-100">
+                        <img src="{{$web_assets}}/img/blog/img-5.jpg" alt="image" class="img-fluid w-100">
                         <div class="profile-user">
-                            <img src="web/img/avatar/avatar-1.jpg" alt="user">
+                            <img src="{{$web_assets}}/img/avatar/avatar-1.jpg" alt="user">
                         </div>
                         <div class="date-box">
                             <span>09</span>Sep
@@ -1110,9 +1110,9 @@
             <div class="item slide-box">
                 <div class="blog-1">
                     <div class="blog-image">
-                        <img src="web/img/blog/img-4.jpg" alt="image" class="img-fluid w-100">
+                        <img src="{{$web_assets}}/img/blog/img-4.jpg" alt="image" class="img-fluid w-100">
                         <div class="profile-user">
-                            <img src="web/img/avatar/avatar-2.jpg" alt="user">
+                            <img src="{{$web_assets}}/img/avatar/avatar-2.jpg" alt="user">
                         </div>
                         <div class="date-box">
                             <span>06</span>Sep
@@ -1138,9 +1138,9 @@
             <div class="item slide-box">
                 <div class="blog-1">
                     <div class="blog-image">
-                        <img src="web/img/blog/img-5.jpg" alt="image" class="img-fluid w-100">
+                        <img src="{{$web_assets}}/img/blog/img-5.jpg" alt="image" class="img-fluid w-100">
                         <div class="profile-user">
-                            <img src="web/img/avatar/avatar-3.jpg" alt="user">
+                            <img src="{{$web_assets}}/img/avatar/avatar-3.jpg" alt="user">
                         </div>
                         <div class="date-box">
                             <span>14</span>Sep
@@ -1166,9 +1166,9 @@
             <div class="item slide-box">
                 <div class="blog-1">
                     <div class="blog-image">
-                        <img src="web/img/blog/img-6.jpg" alt="image" class="img-fluid w-100">
+                        <img src="{{$web_assets}}/img/blog/img-6.jpg" alt="image" class="img-fluid w-100">
                         <div class="profile-user">
-                            <img src="web/img/avatar/avatar-3.jpg" alt="user">
+                            <img src="{{$web_assets}}/img/avatar/avatar-3.jpg" alt="user">
                         </div>
                         <div class="date-box">
                             <span>14</span>Sep
@@ -1211,37 +1211,37 @@
                     <div class="slick row comon-slick-inner" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 2}}]}'>
                         <div class="item slide-box">
                             <div class="partners-box">
-                                <img src="web/img/brand/brand-1.png" alt="brand" class="img-fluid">
+                                <img src="{{$web_assets}}/img/brand/brand-1.png" alt="brand" class="img-fluid">
                             </div>
                         </div>
                         <div class="item slide-box">
                             <div class="partners-box">
-                                <img src="web/img/brand/brand-2.png" alt="brand" class="img-fluid">
+                                <img src="{{$web_assets}}/img/brand/brand-2.png" alt="brand" class="img-fluid">
                             </div>
                         </div>
                         <div class="item slide-box">
                             <div class="partners-box">
-                                <img src="web/img/brand/brand-3.png" alt="brand" class="img-fluid">
+                                <img src="{{$web_assets}}/img/brand/brand-3.png" alt="brand" class="img-fluid">
                             </div>
                         </div>
                         <div class="item slide-box">
                             <div class="partners-box">
-                                <img src="web/img/brand/brand-4.png" alt="brand" class="img-fluid">
+                                <img src="{{$web_assets}}/img/brand/brand-4.png" alt="brand" class="img-fluid">
                             </div>
                         </div>
                         <div class="item slide-box">
                             <div class="partners-box">
-                                <img src="web/img/brand/brand-5.png" alt="brand" class="img-fluid">
+                                <img src="{{$web_assets}}/img/brand/brand-5.png" alt="brand" class="img-fluid">
                             </div>
                         </div>
                         <div class="item slide-box">
                             <div class="partners-box">
-                                <img src="web/img/brand/brand-6.png" alt="brand" class="img-fluid">
+                                <img src="{{$web_assets}}/img/brand/brand-6.png" alt="brand" class="img-fluid">
                             </div>
                         </div>
                         <div class="item slide-box">
                             <div class="partners-box">
-                                <img src="web/img/brand/brand-4.png" alt="brand" class="img-fluid">
+                                <img src="{{$web_assets}}/img/brand/brand-4.png" alt="brand" class="img-fluid">
                             </div>
                         </div>
                     </div>
