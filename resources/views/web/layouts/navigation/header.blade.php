@@ -70,7 +70,7 @@
                             <li><a class="dropdown-item" href="pricing-tables.html">Pricing Tables</a>
                             <li><a class="dropdown-item" href="typography.html">Typography</a>
                             <li><a class="dropdown-item" href="faq.html">Faq</a>
-                            <li><a class="dropdown-item" href="login.html">Login</a>
+                            <li><a class="dropdown-item" href="{{route('login')}}">Login</a>
                             <li><a class="dropdown-item" href="{{route('register')}}">Sigup</a>
                             <li><a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
                             <li><a class="dropdown-item" href="404.html">404 Error</a>

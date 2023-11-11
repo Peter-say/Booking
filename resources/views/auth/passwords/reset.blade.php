@@ -57,7 +57,7 @@
                         <a href="/" class="logo">
                             <img src="{{ $web_assets }}/img/logos/logo.png" alt="logo">
                         </a>
-                        <h3>Sign into your account</h3>
+                        <h3>Use the form below to change your password</h3>
                         <!-- Display success message -->
                         @if (session('success_message'))
                             <div class="alert alert-success">
@@ -65,49 +65,42 @@
                             </div>
                         @endif
 
-                         <!-- Display success message -->
-                         @if (session('error_message'))
-                         <div class="alert alert-danger">
-                             {{ session('error_message') }}
-                         </div>
-                     @endif
-                      
-                        <form action="{{ route('login') }}" method="post">
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
+
+                        <form method="POST" action="{{ route('password.update') }}">
                             @csrf
 
+                            <input type="hidden" name="token" value="{{ $token }}">
+                            <input type="hidden" name="email" value="{{ $email }}">
+
+
+
                             <div class="form-group clearfix">
-                                <input name="email" type="email" class="form-control" placeholder="Email Address"
-                                    aria-label="Email Address" value="{{ old('email') }}">
-                                @error('email')
+                                <input id="new_password" type="password"
+                                    class="form-control @error('new_password') is-invalid @enderror" name="password"
+                                    required autocomplete="new-password" placeholder="New Password">
+                                @error('new_password')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
 
                             <div class="form-group clearfix">
-                                <input name="password" type="password" class="form-control" placeholder="Password"
-                                    aria-label="Password">
-                                @error('password')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-
-                            <div class="form-group checkbox clearfix">
-                                <div class="form-check checkbox-theme float-start">
-                                    <input class="form-check-input" type="checkbox" id="rememberMe" name="remember"
-                                        {{ old('remember') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="rememberMe">
-                                        Remember Me
-                                    </label>
-                                </div>
-                                <a href="{{route('password.request')}}" class="forgot-password">Forgot Password</a>
+                                <input id="new_password_confirmation" type="password" class="form-control"
+                                    name="password_confirmation" required autocomplete="new-password"
+                                    placeholder="Enter New Password Again">
                             </div>
 
                             <div class="form-group clearfix">
-                                <button type="submit" class="btn-md btn-theme w-100">Login</button>
-                            </div>
-
-                            <div class="extra-login clearfix">
-                                <span>Or Login With</span>
+                                <button type="submit" class="btn-md btn-theme w-100">Change Password</button>
                             </div>
                         </form>
 
@@ -144,9 +137,14 @@
         </div>
     </div>
 
+    {{-- <script>
+        setTimeout(function() {
+            window.location.href = '{{ route('login') }}';
+        }, 5000);
+    </script> --}}
+
     @include('web.layouts.bottom.scripts')
 </body>
 
-<!-- Mirrored from storage.googleapis.com/theme-vessel-items/checking-sites/hotel-alpha-html/HTML/main/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Oct 2023 12:26:11 GMT -->
 
 </html>

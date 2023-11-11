@@ -57,7 +57,7 @@
                         <a href="/" class="logo">
                             <img src="{{ $web_assets }}/img/logos/logo.png" alt="logo">
                         </a>
-                        <h3>Sign into your account</h3>
+                        <h3>Enter email address to reset your password</h3>
                         <!-- Display success message -->
                         @if (session('success_message'))
                             <div class="alert alert-success">
@@ -72,38 +72,20 @@
                          </div>
                      @endif
                       
-                        <form action="{{ route('login') }}" method="post">
+                        <form action="{{ route('password.request') }}" method="post">
                             @csrf
 
                             <div class="form-group clearfix">
                                 <input name="email" type="email" class="form-control" placeholder="Email Address"
-                                    aria-label="Email Address" value="{{ old('email') }}">
+                                    aria-label="Email Address" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                 @error('email')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
 
-                            <div class="form-group clearfix">
-                                <input name="password" type="password" class="form-control" placeholder="Password"
-                                    aria-label="Password">
-                                @error('password')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-
-                            <div class="form-group checkbox clearfix">
-                                <div class="form-check checkbox-theme float-start">
-                                    <input class="form-check-input" type="checkbox" id="rememberMe" name="remember"
-                                        {{ old('remember') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="rememberMe">
-                                        Remember Me
-                                    </label>
-                                </div>
-                                <a href="{{route('password.request')}}" class="forgot-password">Forgot Password</a>
-                            </div>
 
                             <div class="form-group clearfix">
-                                <button type="submit" class="btn-md btn-theme w-100">Login</button>
+                                <button type="submit" class="btn-md btn-theme w-100">Reset Password</button>
                             </div>
 
                             <div class="extra-login clearfix">

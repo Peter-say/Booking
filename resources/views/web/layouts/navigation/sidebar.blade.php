@@ -66,7 +66,7 @@
                         <li><a href="pricing-tables.html">Pricing Tables</a></li>
                         <li><a href="typography.html">Typography</a></li>
                         <li><a href="faq.html">Faq</a></li>
-                        <li><a href="login.html">Login</a></li>
+                        <li><a href="{{route('login')}}">Login</a></li>
                         <li><a href="{{route('register')}}">Signup</a></li>
                         <li><a href="forgot-password.html">Forgot Password</a></li>
                         <li><a href="404.html">404 Error</a></li>
